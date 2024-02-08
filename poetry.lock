@@ -605,6 +605,23 @@ marshmallow = ">=3.18.0,<4.0.0"
 typing-inspect = ">=0.4.0,<1"
 
 [[package]]
+name = "deprecated"
+version = "1.2.14"
+description = "Python @deprecated decorator to deprecate old python classes, functions or methods."
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+files = [
+    {file = "Deprecated-1.2.14-py2.py3-none-any.whl", hash = "sha256:6fac8b097794a90302bdbb17b9b815e732d3c4720583ff1b198499d78470466c"},
+    {file = "Deprecated-1.2.14.tar.gz", hash = "sha256:e5323eb936458dccc2582dc6f9c322c852a775a27065ff2b0c4970b9d53d01b3"},
+]
+
+[package.dependencies]
+wrapt = ">=1.10,<2"
+
+[package.extras]
+dev = ["PyTest", "PyTest-Cov", "bump2version (<1)", "sphinx (<2)", "tox"]
+
+[[package]]
 name = "effdet"
 version = "0.4.1"
 description = "EfficientDet for PyTorch"
@@ -2153,6 +2170,59 @@ unicodecsv = ">=0.14.1"
 wand = "*"
 
 [[package]]
+name = "pikepdf"
+version = "8.12.0"
+description = "Read and write PDFs with Python, powered by qpdf"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "pikepdf-8.12.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:4802e48046a059b26949b16c53adb9ce8c0137a265cb8b1083957a3fadc0418b"},
+    {file = "pikepdf-8.12.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:480c69fabe958b56843dc38953c8568a4da2cc819d88b3b1080a470c114e622a"},
+    {file = "pikepdf-8.12.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:744903f2a34f8feeb781e3e5ca86b3ea60aae92246c9085392666eaa878ca7fc"},
+    {file = "pikepdf-8.12.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9f2cff2ed901b5dd6ea704a24e88dfb9e3303019473ffc224d4d72a294e7c43b"},
+    {file = "pikepdf-8.12.0-cp310-cp310-musllinux_1_2_x86_64.whl", hash = "sha256:711064313c00a5dccc5306877844f4e12b33355a9f496d870158d7f906330fd2"},
+    {file = "pikepdf-8.12.0-cp310-cp310-win_amd64.whl", hash = "sha256:238cce9d9bbda606eb7050096251753b32f84c758633212d62ed5f1ecf8f5091"},
+    {file = "pikepdf-8.12.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:c1e13a4f4c7a596ad4157b93453de4dfcb7abc14c58ce9ee110b0e2ee7a0813e"},
+    {file = "pikepdf-8.12.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:73fdaa359262feda7f62aa87bfb97c66f9a30d80bcb592d2c4c5e7714f2ab30e"},
+    {file = "pikepdf-8.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:ea368bb11c1b57b773f349e8a1283617a66227a628f94023bb4a16ed53a1adf3"},
+    {file = "pikepdf-8.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:19867ff1c4db1da7a74aad0fc9455a6ca1b7a45ee460c1e7fce1dd1962c0251d"},
+    {file = "pikepdf-8.12.0-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:485760bb22bcf25f338ab7dc003e6b5f522783f5f00bab0079ea3383152b2d98"},
+    {file = "pikepdf-8.12.0-cp311-cp311-win_amd64.whl", hash = "sha256:93ba53c05d511a5e8a1d5ccf00b71a3c89e9285ec92e8f9a86995b022e667346"},
+    {file = "pikepdf-8.12.0-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:9b2f8f518d7d4ee374deccc27cb65494c33cbc600885253e4454ab31dc466a04"},
+    {file = "pikepdf-8.12.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:119c18de07040cbbdf9f06a3a06fe89c8f321d3386fb96b2f68455bb2f7cab46"},
+    {file = "pikepdf-8.12.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:78f0d79548e56636deb4749fb3fa73458dcdf86e634a1ce1b6e5155f97c4155f"},
+    {file = "pikepdf-8.12.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:8bc82d766f09fafd986d9410c7d53345b3e2963fe3253a9ba09b50812b60e9c4"},
+    {file = "pikepdf-8.12.0-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:5f09c4263bfcad2ba9836b578c42218d6d8cf751331f5cc9639b68d60ab7a05d"},
+    {file = "pikepdf-8.12.0-cp312-cp312-win_amd64.whl", hash = "sha256:0586b9aec4f78a4f6ab2497b47639744ce47b7ad9b96e149194b7ada2d34b848"},
+    {file = "pikepdf-8.12.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:b879e240b4d4b34822a0390fe4f30e6388d0f776e12376f043dc102fe11e9499"},
+    {file = "pikepdf-8.12.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:0718f822dd75574e8c015983d870d8336fe7e62d20f1f726e86fc3156d62c921"},
+    {file = "pikepdf-8.12.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d9ee83f20559c63413fed0059ea159a11116af098f976b8480e82018d954bba9"},
+    {file = "pikepdf-8.12.0-cp38-cp38-win_amd64.whl", hash = "sha256:7fd20e259c2192ca1b718d8f78bbeff1b37340b6a2c9764068c2112449895d85"},
+    {file = "pikepdf-8.12.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:98c04283649b09c8c8d5f18389787dfe48224a3b99758d984ace9c1f1940dd33"},
+    {file = "pikepdf-8.12.0-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:32b033345d0979e8a0dfd7c3af76013b3a3632da50d419545d012535f0cfd3e1"},
+    {file = "pikepdf-8.12.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:fc8dcbdb7ba95ef1e8318eb2ebd2869d53e9e9f8b81d9d7b7b5f9acbc4e6557b"},
+    {file = "pikepdf-8.12.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b8a91610cf07d29ef06992cdfae902fecef3712100f25796c553e1e3a0553a33"},
+    {file = "pikepdf-8.12.0-cp39-cp39-musllinux_1_2_x86_64.whl", hash = "sha256:7209d3cb07d238ef81d438644363a19974697ab6c0d3360292c3c1cb4f2915e6"},
+    {file = "pikepdf-8.12.0-cp39-cp39-win_amd64.whl", hash = "sha256:0c7b1404f9c7714377c3df7c756cff03ac237b2bf3273c1193d0a1849e1b83f0"},
+    {file = "pikepdf-8.12.0-pp39-pypy39_pp73-macosx_10_9_x86_64.whl", hash = "sha256:75de10328d6558e7821aadabb63cadbb40eec3cdc407b01ef990760343ad4305"},
+    {file = "pikepdf-8.12.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c60e8b28b9e96137adc79eade42a764ff508291270e99ac84290808a85a12d94"},
+    {file = "pikepdf-8.12.0-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:54eeaeaa4bdca7320511f00f403ea1ae33ef2e006fd5b5c2b92d92ab7eb77641"},
+    {file = "pikepdf-8.12.0.tar.gz", hash = "sha256:b2d9957e188785a5913deedf6f12dc7eafb5764a3cc3996e044f0e9044b28889"},
+]
+
+[package.dependencies]
+Deprecated = "*"
+lxml = {version = ">=4.8", markers = "python_version >= \"3.10\""}
+packaging = "*"
+Pillow = ">=10.0.1"
+
+[package.extras]
+dev = ["pre-commit", "typer[all]"]
+docs = ["Sphinx (>=3)", "sphinx-autoapi", "sphinx-design", "sphinx-issues", "sphinx-rtd-theme", "tomli"]
+mypy = ["lxml-stubs", "types-Pillow", "types-requests", "types-setuptools"]
+test = ["attrs (>=20.2.0)", "coverage[toml]", "hypothesis (>=6.36)", "numpy (>=1.21.0)", "psutil (>=5.9)", "pybind11", "pytest (>=6.2.5)", "pytest-cov (>=3.0.0)", "pytest-timeout (>=2.1.0)", "pytest-xdist (>=2.5.0)", "python-dateutil (>=2.8.1)", "python-xmp-toolkit (>=2.0.1)", "tomli"]
+
+[[package]]
 name = "pillow"
 version = "10.2.0"
 description = "Python Imaging Library (Fork)"
@@ -2453,6 +2523,24 @@ files = [
 
 [package.extras]
 diagrams = ["jinja2", "railroad-diagrams"]
+
+[[package]]
+name = "pypdf"
+version = "4.0.1"
+description = "A pure-python PDF library capable of splitting, merging, cropping, and transforming PDF files"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "pypdf-4.0.1-py3-none-any.whl", hash = "sha256:fe7c313c7e8074a516eae9d9df0111b7b9769f7a210479af7a342d27270ef81a"},
+    {file = "pypdf-4.0.1.tar.gz", hash = "sha256:871badcfe335dd68b6b563aa7646288c6b86f9ceecffb21e86341261d65d8173"},
+]
+
+[package.extras]
+crypto = ["PyCryptodome", "cryptography"]
+dev = ["black", "flit", "pip-tools", "pre-commit (<2.18.0)", "pytest-cov", "pytest-socket", "pytest-timeout", "pytest-xdist", "wheel"]
+docs = ["myst_parser", "sphinx", "sphinx_rtd_theme"]
+full = ["Pillow (>=8.0.0)", "PyCryptodome", "cryptography"]
+image = ["Pillow (>=8.0.0)"]
 
 [[package]]
 name = "pyreadline3"
@@ -3734,6 +3822,21 @@ rapidfuzz = "*"
 transformers = ">=4.25.1"
 
 [[package]]
+name = "unstructured-pytesseract"
+version = "0.3.12"
+description = "Python-tesseract is a python wrapper for Google's Tesseract-OCR"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "unstructured.pytesseract-0.3.12-py3-none-any.whl", hash = "sha256:6ed42530fc697bb08d1ae4884cc517ee808620c1c1414efe8d5d90334da068d3"},
+    {file = "unstructured.pytesseract-0.3.12.tar.gz", hash = "sha256:751a21d67b1f109036bf4daf796d3e04631697a355efd650f3373412b249de2e"},
+]
+
+[package.dependencies]
+packaging = ">=21.3"
+Pillow = ">=8.0.0"
+
+[[package]]
 name = "urllib3"
 version = "2.2.0"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
@@ -3950,4 +4053,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "07c59c88be0f1af42b0f4ffb9e289d6ea9c63e27578adb76a165fa1802f8615d"
+content-hash = "61415c6c143c996ae8a603c30a7372d16a4a0091fde4af9ebdcd5260d7d54653"

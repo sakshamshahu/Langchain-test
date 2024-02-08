@@ -13,6 +13,10 @@ pdf2image = "^1.17.0"
 pdfminer-six = "^20231228"
 opencv-python = "^4.9.0.80"
 unstructured-inference = "^0.7.24"
+pikepdf = "^8.12.0"
+pypdf = "^4.0.1"
+pytesseract = "^0.3.10"
+unstructured-pytesseract = "^0.3.12"
 
 [build-system]
 requires = ["poetry-core"]

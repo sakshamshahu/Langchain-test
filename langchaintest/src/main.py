@@ -1,7 +1,7 @@
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.document_loaders import UnstructuredPDFLoader
 
-loader = UnstructuredPDFLoader("/Users/saksham/Projects/Langchain-test/data/raw/sample_data/30_pages_struct.pdf" , mode="elements" )
+loader = UnstructuredPDFLoader("/Users/saksham/Projects/Langchain-test/langchaintest/data/raw/sample_data/30_pages_struct.pdf" , mode="elements" )
 data = loader.load()
 print(data)
 

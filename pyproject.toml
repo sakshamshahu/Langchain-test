@@ -18,6 +18,7 @@ pypdf = "^4.0.1"
 pytesseract = "^0.3.10"
 unstructured-pytesseract = "^0.3.12"
 pycrypto = "2.6"
+chromadb = "^0.4.22"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.2"
